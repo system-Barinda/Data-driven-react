@@ -1,15 +1,17 @@
-
-
 export default function TravelCard({ travel }) {
   return (
-    <div className="card">
-      <img src={travel.image} alt={travel.title} className="card-img" />
+    <div className="travel-card">
+      <img
+        src={travel.image}
+        alt={travel.title}
+        className="travel-card-img"
+      />
 
-      <div className="card-content">
-        <span className="card-country"> {travel.country}</span>
-        <h2>{travel.title}</h2>
-        <p className="card-date">{travel.date}</p>
-        <p className="card-desc">{travel.description}</p>
+      <div className="travel-card-content">
+        <span className="travel-card-country">📍 {travel.country}</span>
+        <h2 className="travel-card-title">{travel.title}</h2>
+        <p className="travel-card-date">{travel.date}</p>
+        <p className="travel-card-desc">{travel.description}</p>
       </div>
     </div>
   );
