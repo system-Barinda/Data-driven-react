@@ -1,13 +1,16 @@
-import { useState } from 'react'
-
-import './App.css'
-
-import TravelList from "./components/TravelList";
+import Navbar from "./components/Navbar";
+import TravelCard from "./components/TravelCard";
+import travels from "./data/travels";
 
 export default function App() {
   return (
-    <div className='w-90 h-[100%] bg-green-500 mx-auto'>
-      <TravelList />
-    </div>
+    <>
+      <Navbar />
+      <main className="px-10 py-8 max-w-xl mx-auto">
+        {travels.map((travel) => (
+          <TravelCard key={travel.id} travel={travel} />
+        ))}
+      </main>
+    </>
   );
 }
