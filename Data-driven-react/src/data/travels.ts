@@ -1,4 +1,7 @@
 import { travelType } from "../Datatype.type/travelType";
+import eventDovid from "../assets/eventDovid.jpg";
+import nana from "../assets/nana.jpg"
+import pexel from "../assets/pexel.jpg"
 const travels:travelType[] = [
   {
     id: 1,
@@ -8,7 +11,7 @@ const travels:travelType[] = [
     description:
       "Mount Fuji is the tallest mountain in Japan, standing at 3,776 meters.",
     image:
-      "https://images.unsplash.com/photo-1549693578-d683be217e58",
+      eventDovid,
   },
   {
     id: 2,
@@ -17,8 +20,7 @@ const travels:travelType[] = [
     date: "27 May, 2023",
     description:
       "The Sydney Opera House is a multi-venue performing arts centre.",
-    image:
-      "https://images.unsplash.com/photo-1506976785307-8732e854ad03",
+    image:nana,
   },
   {
     id: 3,
@@ -27,8 +29,7 @@ const travels:travelType[] = [
     date: "01 Oct, 2024 - 10 Nov, 2024",
     description:
       "Geirangerfjord is a fjord in the Sunnmøre region of Norway.",
-    image:
-      "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
+    image:pexel,
   },
 ];
 
