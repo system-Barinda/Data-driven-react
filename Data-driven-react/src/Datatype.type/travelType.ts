@@ -1,4 +1,4 @@
-type travelType = {
+export type travelType = {
     id:number;
     country:string;
     title:string;

@@ -1,4 +1,5 @@
-const travels = [
+import { travelType } from "../Datatype.type/travelType";
+const travels:travelType[] = [
   {
     id: 1,
     country: "Japan",
