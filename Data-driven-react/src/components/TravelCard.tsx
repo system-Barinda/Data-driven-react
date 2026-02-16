@@ -1,4 +1,6 @@
-export default function TravelCard({ travel }:any) {
+import type {travelType}  from "../Datatype.type/travelType";
+
+export default function TravelCard({ travel }:Readonly <travelType>) {
   return (
     <div className="flex gap-5 py-6 border-b border-gray-200">
      
